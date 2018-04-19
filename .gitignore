@@ -3,11 +3,16 @@ wp-admin/
 wp-includes/
 
 #Ignore Uploads Directory
-wp-content/uploads/
+wp-content/uploads
+wp-content/upgrade
+wp-content/plugins
 
 #Ignore PHP and TXT files
 *.php
 *.txt
 
-#Do not ignore themes directory
+
+
+#Ignore Content Directory except themes directory
+
 !wp-content/themes/accelerate-theme-child
