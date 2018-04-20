@@ -1,0 +1,18 @@
+#Ignore Admin and Includes Directories
+wp-admin/
+wp-includes/
+
+#Ignore Uploads Directory
+wp-content/uploads
+wp-content/upgrade
+wp-content/plugins
+
+#Ignore PHP and TXT files
+*.php
+*.txt
+
+
+
+#Don't ignore anything in theme file
+
+!wp-content/themes/accelerate-theme-child/
