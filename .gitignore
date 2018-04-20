@@ -13,6 +13,6 @@ wp-content/plugins
 
 
 
-#Ignore Content Directory except themes directory
+#Don't ignore anything in theme file
 
-!wp-content/themes/accelerate-theme-child
+!wp-content/themes/accelerate-theme-child/
