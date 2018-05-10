@@ -2,18 +2,25 @@
  Theme Name:   Accelerate Theme Child
  Theme URI:    http://example.com/accelerate-theme-child/
  Description:  Accelerate Child Theme - Accelerate
- Author:       Your Name!
- Author URI:   http://example.com
+ Author:       Abbi Aldrich
+ Author URI:   https://abbialdrich.com;
  Template:     accelerate-theme
- Version:      1.0.0
+ Version:      2.0.0
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  accelerate-theme-child
 */
 
 @import url('../accelerate-theme/style.css');
 
+/* Front Page Styles */
+
+.page-header .primary-navigation ul li a {
+  margin: 0 0 0 2em;
+}
+
 .home-page {
 	background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	margin: 0;
 }
 
 #masthead {
@@ -30,15 +37,45 @@
 	margin-bottom: 2em;
 }
 
-.blog-post h4 {
+.front-page h2 {
+	font-size: 1.5em;
+
+}
+
+.front-page h3 {
+	font-size: ;
+	text-align: center;
+	margin: .75em 0;
+	font-weight: 400;
+}
+
+.front-page h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
 	text-transform: uppercase;
 	margin: 2em 0 .5em;
 }
 
-.blog-post h3 {
-	font-size: 1.5em;
+.featured-work {
+	margin: 3em 0;
+}
+
+.featured-work .site-content{
+	flex-flow: wrap;
+}
+
+.featured-work h4 {
+	width: 100%;
+	text-align: center;
+	color: black;
+	margin: 0 0 3em 0 ;
+}
+
+.featured-work-row {
+	width: 100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
 }
 
 .read-more-link {
@@ -46,4 +83,72 @@
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/* Footer Social Media Menu Styles */
+.site-info {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.social-media-menu  {
+	text-align: right;
+	list-style: none;
+}
+
+.social-media-menu li {
+		display: inline;
+	width: 30px;
+	height: 30px;
+	padding: 4px;
+	font-size: 1.2em;
+	background: #333;
+	border-radius: 50%;
+	margin: 0 .1em;
+}
+
+.social-media-menu .menu-item i._mi {
+	color: white;
+	font-size: 1.2em;
+	    margin-top: -.15em;
+}
+
+/* Case Study Custom Page Styles */
+
+.case-study {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.case-study-sidebar {
+	width: 40%;
+	margin: 0 1em 0 0;
+}
+
+.case-study h2 {
+	margin-bottom: 0;
+}
+
+.case-study h4 {
+	font: 400 .85em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	color: #a6a6a6;
+	margin: 0;
+}
+
+.case-study h4 span {
+	color: black;
+}
+
+/* Case Study Archive Page Styles */
+
+.case-study-desc {
+	width: 35%;
+}
+
+.case-study-img img {
+	width: 100%;
+	height: auto;
+}
 }
