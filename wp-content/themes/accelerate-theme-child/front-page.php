@@ -43,9 +43,9 @@ get_header(); ?>
 		</div>
 	</section>
 					
-
+<section class="blog-social-row">
+	<div class="site-content">
 	<section class="recent-posts">
-		<div class="site-content">
 			<div class="blog-post">
 				<h4> From the Blog</h4>
 				<?php query_posts('posts_per_page=1'); ?>
@@ -54,9 +54,17 @@ get_header(); ?>
 						<?php the_excerpt(); ?>
 					<?php endwhile; ?>
 					<?php wp_reset_query(); ?>
-			</div>
 		</div>
 	</section>
+
+	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+		</div>
+	<?php endif; ?>
+</div>
+</section>
+
 </div>
 
 <?php get_footer(); ?>

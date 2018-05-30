@@ -18,7 +18,7 @@
   margin: 0 0 0 2em;
 }
 
-.home-page {
+.home-page, .about-page-hero {
 	background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 	margin: 0;
 }
@@ -27,17 +27,23 @@
 	background: none repeat scroll 0 0 #45ac9d;
 }
 
-.button {
+.button, input[type="button"],
+input[type="submit"] {
 	background: #45ac9d;
+	height: 100%;
 }
 
-.blog-post {
-	width: 50%;
-	float: left;
+.blog-social-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.recent-posts, #secondary.widget-area{
+	width: 48%;
 	margin-bottom: 2em;
 }
 
-.front-page h2 {
+.front-page h2{
 	font-size: 1.5em;
 
 }
@@ -49,10 +55,10 @@
 	font-weight: 400;
 }
 
-.front-page h4 {
+h4 , .section-heading   {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	color: #a6a6a6;
 	text-transform: uppercase;
+	text-align: center;
 	margin: 2em 0 .5em;
 }
 
@@ -64,10 +70,8 @@
 	flex-flow: wrap;
 }
 
-.featured-work h4 {
+.featured-work h4{
 	width: 100%;
-	text-align: center;
-	color: black;
 	margin: 0 0 3em 0 ;
 }
 
@@ -78,11 +82,37 @@
 	justify-content: space-between;
 }
 
+.blog-social-row h2 {
+	margin-top: 0;
+	line-height: 1.75;
+}
+
+.blog-social-row h4 {
+	color: #a6a6a6;
+	text-align: left;
+	margin-bottom: 2em;
+}
+
+.atf-screen-name{
+	margin-bottom: 2em !important;
+}
+
+.atf-screen-name a {
+	font-size: 1.5em !important;
+	font-weight: 700;
+	line-height: 1;
+
+}
+
+ 
+
+
 .read-more-link {
 	font-family: 'Montserrat';
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+	font-size: .875em;
 }
 
 /* Footer Social Media Menu Styles */
@@ -108,11 +138,35 @@
 	margin: 0 .1em;
 }
 
+
 .social-media-menu .menu-item i._mi {
 	color: white;
 	font-size: 1.2em;
 	    margin-top: -.15em;
 }
+
+i._mi.fa.fa-linkedin {
+    width: 25px;
+    margin-top: -.2em;
+    text-align: center;
+  }
+
+/*Sidebar Widget Styles*/
+
+	.mc4wp-form-fields label {
+    font-weight: 700;
+    font-size: .875em;
+  }
+
+  #sign-up-btn {
+  	text-align: center;
+  }
+
+  input[type="email"] {
+  	width: 100%;
+  	font-size: .875em;
+  }
+
 
 /* Case Study Custom Page Styles */
 
@@ -120,6 +174,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin: 0 0 2em 0;
 }
 
 .case-study-sidebar {
@@ -135,6 +190,8 @@
 	font: 400 .85em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
 	margin: 0;
+	text-transform: capitalize;
+	text-align: left;
 }
 
 .case-study h4 span {
@@ -148,7 +205,120 @@
 }
 
 .case-study-img img {
-	width: 100%;
+	max-width: 500px;
 	height: auto;
 }
+
+/* Contact Form Styles */
+.contact-page .site-content {
+	justify-content: center;
+}
+
+
+.contact-page .main-content {
+	max-width: 67%;
+}
+
+.nf-field-element .button {
+	float: right;
+}
+
+/* About Page Styles */
+
+.about-page-hero {
+	padding: 4em 0;
+}
+
+.tagline {
+	color: white;
+	text-align: center;
+	width: 55%;
+	margin: 0 auto;
+	max-width: 960px;
+	font-weight: normal;
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+
+.about-page .site-content {
+	margin-top: 2em;
+	flex-wrap: wrap;
+}
+
+.about-content h4, #service-page-description {
+	width: 100%;
+	text-align: center;
+}
+
+.services-section {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0;
+}
+
+.indiv-service {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em 0;
+}
+
+.service-description {
+	width: 67%;
+}
+
+.service-title {
+	font-weight: normal;
+	margin-top: 0;
+}
+
+/* Call to Action Row Styling */
+.interested {
+	justify-content: center;
+	border-top: 1px solid #bfbfbf;
+	padding-top: 2em;
+}
+
+.interested h2 {
+	margin: 0 2em;
+}
+
+/* 404 Page Styling */
+.page-404 {
+	background: url(img/dogatehomeworkbw.jpg) no-repeat scroll right top / cover rgba(0, 0, 0, 0);
+  min-height: 900px;
+}
+
+.page-404 .main-content {
+	max-width: 50%;
+  color: white;
+  background: darkgray;
+  opacity: 0.75;
+  padding: 1em;
+  margin-top: 5em;
+}
+
+.page-404 h1 {
+	  font-weight: normal;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 0 0 1em;
+}
+
+.page-404 span {
+	font-weight: bold;
+	color: #45ac9d;
+}
+
+.page-404 .main-content a {
+	color: #45ac9d;
+}
+
+.page-404 .main-content p {
+	  color: white;
+
+    margin: 0;
+}
+
 }
