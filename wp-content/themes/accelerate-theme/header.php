@@ -14,7 +14,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="A WordPress portfolio project site, built with Skillcrush, featuring custom post types, custom queries, and custom fields.">
-	<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready; style-src 'self' 'unsafe-inline' *.accelerate.abbialdrich.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.accelerate.abbialdrich.com *.addthis.com *.addthisedge.com graph.facebook.com widgets.pinterest.com; img-src 'self' *.accelerate.abbialdrich.com data:https://accelerate.abbialdrich.com/;"> 
+	<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready; style-src 'self' 'unsafe-inline' *.accelerate.abbialdrich.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.accelerate.abbialdrich.com *.addthis.com *.addthisedge.com graph.facebook.com widgets.pinterest.com; img-src 'self' *.accelerate.abbialdrich.com data:https://staging2.accelerate.abbialdrich.com/;"> 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
