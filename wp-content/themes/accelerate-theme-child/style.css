@@ -12,11 +12,10 @@
 
 @import url('../accelerate-theme/style.css');
 
-/* Front Page Styles */
-
-.page-header .primary-navigation ul li a {
-  margin: 0 0 0 2em;
+p {
+	font-size: 1em;
 }
+/* Front Page Styles */
 
 .home-page, .about-page-hero {
 	background: url('img/taxi-photo.jpg') no-repeat scroll right center / cover rgba(0, 0, 0, 0);
@@ -25,6 +24,34 @@
 
 #masthead {
 	background: none repeat scroll 0 0 #45ac9d;
+}
+
+#menu-top-nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+#menu-top-nav span {
+	font-size: .9em;
+}
+
+.page-header .primary-navigation ul li a {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.menu-item i._mi {
+  font-size: 1.5em;
+}
+
+.menu-item i._before, .rtl .menu-item i._after {
+  margin-right: 0;
 }
 
 .button, input[type="button"],
@@ -39,7 +66,6 @@ input[type="submit"] {
 }
 
 .recent-posts, #secondary.widget-area{
-	width: 48%;
 	margin-bottom: 2em;
 }
 
@@ -78,8 +104,12 @@ h4 , .section-heading   {
 .featured-work-row {
 	width: 100%;
 	display: flex;
-	flex-flow: row;
-	justify-content: space-between;
+	flex-flow: column;
+	align-items: center;
+}
+
+.individual-featured-work {
+
 }
 
 .blog-social-row h2 {
@@ -119,16 +149,17 @@ h4 , .section-heading   {
 .site-info {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .social-media-menu  {
-	text-align: right;
+	text-align: center;
 	list-style: none;
+	min-width: 140px;
 }
 
 .social-media-menu li {
-		display: inline;
+	display: inline;
 	width: 30px;
 	height: 30px;
 	padding: 4px;
@@ -232,16 +263,17 @@ i._mi.fa.fa-linkedin {
 .tagline {
 	color: white;
 	text-align: center;
-	width: 55%;
+	width: 80%;
 	margin: 0 auto;
 	max-width: 960px;
 	font-weight: normal;
 	line-height: 1.5em;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .about-page .site-content {
 	margin-top: 2em;
+	display: flex;
 	flex-wrap: wrap;
 }
 
@@ -254,6 +286,7 @@ i._mi.fa.fa-linkedin {
 	display: flex;
 	flex-direction: column;
 	margin: 2em 0;
+	font-size: .85em;
 }
 
 .indiv-service {
@@ -265,12 +298,15 @@ i._mi.fa.fa-linkedin {
 }
 
 .service-description {
-	width: 67%;
+	width: 75%;
 }
 
 .service-title {
 	font-weight: normal;
 	margin-top: 0;
+}
+.services-img {
+	width: 20%;
 }
 
 /* Call to Action Row Styling */
@@ -321,4 +357,44 @@ i._mi.fa.fa-linkedin {
     margin: 0;
 }
 
+@media (min-width: 768px) {
+	#menu-top-nav span {
+		font-size: 1em;
+	}
+	.page-header .primary-navigation {
+		width: 60%;
+	}
+
+	.page-header .primary-navigation ul li a {
+	  padding: 0;
+	  margin: 0;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: row;
+	}
+	#menu-top-nav .menu-item i._mi {
+	  display: none;
+	}
+	.featured-work-row {
+		flex-flow: row;
+		justify-content: space-between;
+	}
+	.individual-featured-work {
+		width: 32%;
+	}
+	.recent-posts, #secondary.widget-area{
+		width: 48%;
+	}
+	.site-info {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.services-section {
+	font-size: 1em;
+}
+.tagline {
+	width: 55%;
+	font-size: 1.5em;
 }
