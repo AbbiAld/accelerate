@@ -195,7 +195,7 @@ i._mi.fa.fa-linkedin {
 
   input[type="email"] {
   	width: 100%;
-  	font-size: .875em;
+  	/*font-size: .875em;*/
   }
 
 
@@ -203,18 +203,13 @@ i._mi.fa.fa-linkedin {
 
 .case-study {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	margin: 0 0 2em 0;
 }
 
-.case-study-sidebar {
-	width: 40%;
-	margin: 0 1em 0 0;
-}
-
 .case-study h2 {
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .case-study h4 {
@@ -231,11 +226,8 @@ i._mi.fa.fa-linkedin {
 
 /* Case Study Archive Page Styles */
 
-.case-study-desc {
-	width: 35%;
-}
-
 .case-study-img img {
+	width: 100%;
 	max-width: 500px;
 	height: auto;
 }
@@ -247,7 +239,7 @@ i._mi.fa.fa-linkedin {
 
 
 .contact-page .main-content {
-	max-width: 67%;
+	max-width: ;
 }
 
 .nf-field-element .button {
@@ -318,6 +310,8 @@ i._mi.fa.fa-linkedin {
 
 .interested h2 {
 	margin: 0 2em;
+	text-align: center;
+	line-height: 1.5em;
 }
 
 /* 404 Page Styling */
@@ -397,4 +391,24 @@ i._mi.fa.fa-linkedin {
 .tagline {
 	width: 55%;
 	font-size: 1.5em;
+}
+.contact-page .main-content {
+	max-width: 67%;
+}
+.case-study {
+	flex-direction: row;
+}
+.case-study-desc {
+	width: 35%;
+}
+.case-study-archive .case-study-img {
+  width: 60%;
+}
+.case-study-sidebar {
+	width: 40%;
+	margin: 0 1em 0 0;
+}
+.case-study-sample {
+	width: 55%;
+}
 }
