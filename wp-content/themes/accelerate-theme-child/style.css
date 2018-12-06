@@ -225,6 +225,9 @@ i._mi.fa.fa-linkedin {
 }
 
 /* Case Study Archive Page Styles */
+.case-study-archive .case-study-img {
+  text-align: center;
+}
 
 .case-study-img img {
 	width: 100%;
@@ -403,7 +406,7 @@ i._mi.fa.fa-linkedin {
 }
 .case-study-archive .case-study-img {
   width: 60%;
-  text-align: center;
+  text-align: right;
 }
 .case-study-sidebar {
 	width: 40%;
